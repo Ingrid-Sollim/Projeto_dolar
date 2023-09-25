@@ -8,5 +8,5 @@ Armazenar os dados brutos em formato parquet no Data Lake e armazenar os dados c
 - Os dados devem ser refinados e inseridos em uma tabela no banco de dados.
 
 **Origem e especificação dos dados**
--Os dados devem ser extraídos do seguinte link do BACEN: [https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/aplicacao#!/]
+-Os dados devem ser extraídos do seguinte link do BACEN: (https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2701-01-2019%27&@dataFinalCotacao=%2712-31-2025%27&$top=9000&$format=text/csv&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao)https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2701-01-2019%27&@dataFinalCotacao=%2712-31-2025%27&$top=9000&$format=text/csv&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao
 
