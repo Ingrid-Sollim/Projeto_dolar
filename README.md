@@ -1,12 +1,14 @@
-# Projeto_dolar
-Este projeto tem o objetivo de extrair a cotação diária do dolar, a partir dos dados provenientes da API do BACEN.\
-Armazenar os dados brutos em formato parquet no Data Lake e armazenar os dados curados em um banco de dados.\
+# Dollar_Project
+This project aims to extract the daily dollar exchange rate from the Banco Central do Brasil (BACEN) API.\
+The raw data will be stored in CSV format in the data lake, and the curated data will be stored in a database.
 
-## 1- Regras de negócio
-- O pipeline deve rodar todos os dias, às 9h, para extrair os dados do dia anterior; 
-- Os dados brutos devem ser salvos em formato csv no Data Lake,com o nome do aquivo sendo a data a que ele se refere;
-- Os dados devem ser refinados e inseridos em uma tabela no banco de dados.
+## 1 - Business Rules
+- The pipeline must run every day at 9 a.m. to extract data from the previous day.
+- Raw data must be saved in CSV format in the data lake, with the file name corresponding to the date it refers to.
+- Data must be refined and inserted into a table in the database.
 
-**Origem e especificação dos dados**
--Os dados devem ser extraídos do seguinte link do BACEN: (https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2701-01-2019%27&@dataFinalCotacao=%2712-31-2025%27&$top=9000&$format=text/csv&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao)https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2701-01-2019%27&@dataFinalCotacao=%2712-31-2025%27&$top=9000&$format=text/csv&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao
+**Data Source and Specification**
+- Data should be extracted from the following BACEN link: (https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2701-01-2019%27&@dataFinalCotacao=%2712-31-2025%27&$top=9000&$format=text/csv&$select=cotacaoCompra,cotacaoVenda,dataHoraCotacao)
+
+## 2 - Architecture Model
 
