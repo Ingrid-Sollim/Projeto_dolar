@@ -4,7 +4,7 @@ The raw data will be stored in CSV format in the data lake, and the curated data
 
 ## 1 - Business Rules
 - The pipeline must run every day at 9 a.m. to extract data from the previous day.
-- Raw data must be saved in CSV format in the data lake, with the file name corresponding to the date it refers to.
+- Raw data must be saved in parquet format in the data lake, with the file name corresponding to the date it refers to.
 - Data must be refined and inserted into a table in the database.
 
 **Data Source and Specification**
