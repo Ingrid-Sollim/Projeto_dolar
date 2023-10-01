@@ -17,8 +17,9 @@ For this project the following tools were used:
 - Azure Data Factory for orchestration;
 - Azure SQL Database for the silver layer storage;
 - Azure Key Vault to safely store the keys and passwords used in this project
-  
-![dolar_architecture drawio](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/52eb3c0b-9f56-415f-9ec7-59627e3d217a)
+  ![dolar_architecture drawio](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/470f441f-c978-4475-8d39-1533b203e46c)
+
+
 
 ## 3- Development process to the final stage
 A pipeline was created using Azure Data Factory(ADF).\
