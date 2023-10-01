@@ -16,7 +16,9 @@ For this project the following tools were used:
 - Azure Databricks for data transformation;
 - Azure Data Factory for orchestration;
 - Azure SQL Database for the silver layer storage;
-- Azure Key Vault to safely store the keys and passwords used in this project
+- Azure Key Vault to safely store the keys and passwords used in this project;
+- GitHub for documentation and code versioning
+
   ![dolar_architecture drawio](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/470f441f-c978-4475-8d39-1533b203e46c)
 
 
