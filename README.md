@@ -24,8 +24,18 @@ For this project the following tools were used:
 
 
 ## 3- Development process to the final stage
-A pipeline was created using Azure Data Factory(ADF).\
-In order to connect Databricks the ADF, a linked service was created.\
+# 3.1 - Data Pipeline
+A pipeline was created using Azure Data Factory(ADF). In order to update the database daily, a trigger was created to run the pipeline every day at 09:00h.\
+
+![trigger](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/a4fbdccd-b7f2-4e07-b002-2a2d55d2380b)
+
+In order to connect Databricks the ADF, a linked service was created. To create it a Databrick Workspace URL was needed and the access token. \
+![azurelinkedservice](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/347dc854-0fda-4fbe-8445-4b32508a92e7)
 
 
-![image](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/1194464An86/96c537ff-3b41-46f6-be13-46275b6e7970)
+The pipeline has two tasks, the first consists of a notebooks that extracts the data from API and stores it in the Data Lake in the parquet format.\
+The second notebook reads the parquet file, cleans the data and change the columns to decimal and timestamp.
+
+
+![dolar_adf](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/19fd496e-e7c8-484e-9a8b-16c1674c40d8)
+
