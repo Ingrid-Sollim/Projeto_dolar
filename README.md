@@ -34,7 +34,7 @@ For this project the following tools were used:
 
 
 - The pipeline has two tasks, the first consists of a notebooks that extracts the data from API and stores it in the Data Lake in the parquet format.\
-The second notebook reads the parquet file, cleans the data and change the columns to decimal and timestamp.
+The second notebook reads the parquet file, cleans the data and changes the columns to decimal and timestamp.
 
 
 ![dolar_adf](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/19fd496e-e7c8-484e-9a8b-16c1674c40d8)
