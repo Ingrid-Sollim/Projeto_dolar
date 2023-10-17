@@ -33,7 +33,7 @@ For this project the following tools were used:
 ![azurelinkedservice](https://github.com/Ingrid-Sollim/Projeto_dolar/assets/119446486/347dc854-0fda-4fbe-8445-4b32508a92e7)
 
 
-- The pipeline has two tasks, the first consists of a notebooks that extracts the data from API and stores it in the Data Lake in the parquet format.\
+- The pipeline has two tasks, the first consists of a notebook that extracts the data from API and stores it in the Data Lake in the parquet format.\
 The second notebook reads the parquet file, cleans the data and changes the columns to decimal and timestamp.
 
 
